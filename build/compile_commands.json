@@ -1,0 +1,42 @@
+[
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\main.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\main.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/main.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\create_destroy_arrays.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\create_destroy_arrays.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/create_destroy_arrays.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\create_file_path.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\create_file_path.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/create_file_path.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\encode_data.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\encode_data.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/encode_data.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\enter_file_name.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\enter_file_name.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/enter_file_name.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\information_number.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\information_number.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/information_number.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\validate_user_var.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\validate_user_var.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/validate_user_var.cpp"
+},
+{
+  "directory": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/CxxFinals2022.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\CxxFinals2022.dir\\source\\write_to_file.cpp.obj -c C:\\Users\\ictgi\\Desktop\\BSCS1_CCS102_C++_Computer_Programming_Finals\\source\\write_to_file.cpp",
+  "file": "C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/source/write_to_file.cpp"
+}
+]

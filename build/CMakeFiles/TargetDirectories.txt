@@ -1,0 +1,5 @@
+C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build/CMakeFiles/CxxFinals2022.dir
+C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build/CMakeFiles/package.dir
+C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build/CMakeFiles/package_source.dir
+C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build/CMakeFiles/edit_cache.dir
+C:/Users/ictgi/Desktop/BSCS1_CCS102_C++_Computer_Programming_Finals/build/CMakeFiles/rebuild_cache.dir
