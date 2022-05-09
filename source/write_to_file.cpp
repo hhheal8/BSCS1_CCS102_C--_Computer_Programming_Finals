@@ -2,6 +2,8 @@
 
 auto create_html_table(std::fstream &file_html, double **table_data, const_szt &rows, const_szt &columns) -> void {
 
+  //REVIEW: Local Variable Declarations
+
   tags *html_tags = new tags();
 
   html_tags->start       = "<!DOCTYPE html>";
@@ -55,6 +57,7 @@ tr:nth-child(even) {
   const_str user_average_msg5 = "Excellent";
 
   //ANCHOR: Output in file(.html)
+  //ANCHOR: Algorithm and Statements to execute
 
   file_html << html_tags->start;
   file_html << html_tags->start_html;
@@ -198,3 +201,6 @@ tr:nth-child(even) {
   html_tags = nullptr;
 
 }
+
+//ANCHOR: Learning reference for HTML table
+//LINK: https://www.w3schools.com/html/html_tables.asp

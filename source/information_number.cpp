@@ -4,9 +4,13 @@
 
 auto as_rows() -> const_szt {
 
+  //REVIEW: Local Variable Declarations
+
   size_t n_students_to_encode = 0;
 
   const_str warning_msg = "\nInvalid Format/Not a valid Number of Student(s)\nRe-enter how many Number of Student(s) to Encode: ";
+
+  //ANCHOR: Algorithm and Statements to execute
 
   std::cout << "\nEnter how many Number of Student(s) to Encode   : ";
   validate_user_var(n_students_to_encode, warning_msg);
@@ -17,9 +21,13 @@ auto as_rows() -> const_szt {
 
 auto as_columns() -> const_szt {
 
+  //REVIEW: Local Variable Declarations
+
   size_t n_subjgrades_to_encode = 0;
 
   const_str warning_msg = "\nInvalid Format/Not a valid Number of Grade(s)\nRe-enter how many Number of Grade(s) to Encode  : ";
+
+  //ANCHOR: Algorithm and Statements to execute
 
   std::cout << "\nEnter how many Number of Grade(s) to Encode     : ";
   validate_user_var(n_subjgrades_to_encode, warning_msg);
@@ -27,3 +35,7 @@ auto as_columns() -> const_szt {
   return n_subjgrades_to_encode;
 
 }
+
+//ANCHOR: Learning reference for resetting state of `std::cin`
+//LINK: https://stackoverflow.com/questions/25020129/cin-ignorenumeric-limitsstreamsizemax-n
+//LINK: https://en.cppreference.com/w/cpp/types/numeric_limits
