@@ -30,7 +30,7 @@ auto encode_data(double **table_data, const_szt &rows, const_szt &columns) -> vo
     for(size_t k = 1; k < columns + 1; ++k) {
 
       std::cout << "Enter Grade on Subject No. " << k << ".   : ";
-      validate_grade_subj(grade_subj);
+      validate_grade_subj(grade_subj, k);
 
       table_data[i][k] = grade_subj;
 
