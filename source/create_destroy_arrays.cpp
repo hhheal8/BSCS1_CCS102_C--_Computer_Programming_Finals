@@ -141,3 +141,9 @@ auto destroy_2d_array(double **table_data, const_szt &size) -> void {
   table_data = nullptr;
 
 }
+
+//ANCHOR: Learning reference for template specialization
+//LINK: https://www.youtube.com/watch?v=8jLOx1hD3_o&t=67490s
+
+//ANCHOR: Learning reference for `constexpr`
+//LINK: https://xuhuisun.com/post/c++-weekly-2-constexpr-map/#:~:text=The%20constexpr%20specifier%20declares%20that%20it%20is%20possible,like%20to%20be%20evaluated%20at%20the%20compile-time%20specifically.?msclkid=261d68dccf6011eca2e6d26a526a1076

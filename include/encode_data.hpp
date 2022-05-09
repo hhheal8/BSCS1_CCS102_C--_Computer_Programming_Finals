@@ -6,6 +6,9 @@
 template<typename ArrayType>
 auto encode_data(ArrayType **table_data, const_szt &rows, const_szt &columns) -> void;
 
+//ANCHOR: Template specialization
+//NOTE: Specialization for std::string
+
 template<>
 auto encode_data(std::string **table_data, const_szt &rows, const_szt &columns) -> void;
 

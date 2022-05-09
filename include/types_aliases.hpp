@@ -34,7 +34,7 @@ struct tags {
   std::string close_table_r;    //REVIEW: closing of table row - </tr>
   std::string close_table_d;    //REVIEW: closing of table data - </td>      
 
-  ~tags(){}
+  ~tags(){} //NOTE: Destructor
 
 };
 
