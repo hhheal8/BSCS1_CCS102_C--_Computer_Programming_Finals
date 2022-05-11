@@ -31,9 +31,9 @@ auto validate_number_code(size_t &number_code) -> void;
 //NOTE: Template specialization for double
 
 template<typename Var>
-auto validate_grade_subj(Var &grade_subj, size_t &validate_at_n) -> void;
+auto validate_grade_subj(Var &grade_subj, const_szt &validate_at_n) -> void;
 
 template<>
-auto validate_grade_subj(double &grade_subj, size_t &validate_at_n) -> void;
+auto validate_grade_subj(double &grade_subj, const_szt &validate_at_n) -> void;
 
 #endif // VALIDATE_USER_VAR_H

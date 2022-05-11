@@ -6,4 +6,6 @@
 auto as_rows() -> const_szt;
 auto as_columns() -> const_szt;
 
+auto enter_subject_name(std::string *table_data, const_szt &columns) -> void;
+
 #endif // INFORMATION_NUMBER

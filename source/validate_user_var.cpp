@@ -147,7 +147,7 @@ auto validate_number_code(size_t &number_code) -> void {
 
 
 template<typename Var>
-auto validate_grade_subj(Var &grade_subj, size_t &validate_at_n) -> void {
+auto validate_grade_subj(Var &grade_subj, const_szt &validate_at_n) -> void {
 
   //REVIEW: Local Variable Declarations
   
@@ -173,13 +173,13 @@ auto validate_grade_subj(Var &grade_subj, size_t &validate_at_n) -> void {
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    return validate_grade_subj(grade_subj, validate_at_n);
+    validate_grade_subj(grade_subj, validate_at_n);
   }
 
 }
 
 template<>
-auto validate_grade_subj(double &grade_subj, size_t &validate_at_n) -> void {
+auto validate_grade_subj(double &grade_subj, const_szt &validate_at_n) -> void {
 
   //REVIEW: Local Variable Declarations
   
@@ -205,7 +205,7 @@ auto validate_grade_subj(double &grade_subj, size_t &validate_at_n) -> void {
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    return validate_grade_subj(grade_subj, validate_at_n);
+    validate_grade_subj(grade_subj, validate_at_n);
   }
 
 }

@@ -2,7 +2,7 @@
 Major Subject - CCS102 Computer Programming Finals May 2022
 
 ## Description
-A simple Create, Read, Update, Delete, and Search project with executable html file
+A simple Create, Read, Update, Delete, and Search project with executable html file (No Read, Update, Delete, and Search)
 
 Written in C++20
 

@@ -36,6 +36,22 @@ auto as_columns() -> const_szt {
 
 }
 
+auto enter_subject_name(std::string *table_data, const_szt &columns) -> void {
+
+  std::string subj_name = "";
+
+  std::cout << "\n";
+  std::cin.ignore();
+  for(size_t i = 0; i < columns; ++i) {
+    std::cout << "Enter Name of Subject No. " << i + 1 << ".   : ";
+    getline(std::cin, subj_name);
+
+    table_data[i] = subj_name;
+  }
+
+}
+
+
 //ANCHOR: Learning reference for resetting state of `std::cin`
 //LINK: https://stackoverflow.com/questions/25020129/cin-ignorenumeric-limitsstreamsizemax-n
 //LINK: https://en.cppreference.com/w/cpp/types/numeric_limits

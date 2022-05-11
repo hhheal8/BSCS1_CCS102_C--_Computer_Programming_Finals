@@ -9,6 +9,7 @@
 
   REVIEW: 
   Variable naming convention - snake_case (ex. variable_name)
+  Tab size - 2
 
   Function implementation/declaration syntax - east end function style (ex. auto fun() -> bool;)
   LINK: https://www.danielsieger.com/blog/2022/01/28/cpp-trailing-return-types.html#:~:text=Trailing%20return%20types%20are%20an%20alternative%20syntax%20introduced,of%20the%20function%3A%20int%20max%28int%20a%2C%20int%20b%29%3B
@@ -17,6 +18,13 @@
   LINK: https://www.youtube.com/watch?v=8jLOx1hD3_o&t=67490s
 
   LINK: https://en.cppreference.com/
+
+  //TODO:
+  Things you'll be dealing with this project
+  1. Pass by Pointer
+  2. Pass by Reference/const Reference
+  3. Variable Allocation and Deallocation 
+  4. Some C++11 features
 
 */
 
@@ -42,31 +50,28 @@ auto main() -> int {
   const_szt rows    = as_rows();
   const_szt columns = as_columns();
 
+  std::string *list_subj = create_1d_array<std::string>(columns);
+  enter_subject_name(list_subj, columns);
+
   //ANCHOR:
   //Allocate 2D double array
   //5th step - Encode student number code and grades per n subject
   //6th step - Create html tags in user file(.html) and output the encoded information
   //Deallocate 2D double array
 
-  double **list_data = create_2d_array<double>(rows, columns);
+  double **list_data     = create_2d_array<double>(rows, columns);
 
   encode_data(list_data, rows, columns);
-  create_html_table(file_html, list_data, rows, columns);
+  create_html_table(file_html, list_subj, list_data, rows, columns);
 
   destroy_2d_array<double>(list_data, rows);
+  destroy_1d_array<std::string>(list_subj, columns);
 
   file_html.close();
 
 }
 
 /*
-
-  //TODO:
-  Things you'll be dealing with this project
-  1. Pass by Pointer
-  2. Pass by Reference/const Reference
-  3. Variable Allocation and Deallocation 
-  4. Some C++11 features
 
   //REVIEW:
   Here are some VS Code Extension that might help you write code efficiently
