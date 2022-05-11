@@ -2,7 +2,7 @@
 
 //REVIEW: Allocate 1D Array 
 template<typename ArrayType>
-constexpr ArrayType *create_1d_array(const_szt &size) {
+ArrayType *create_1d_array(const_szt &size) {
 
   ArrayType *table_data = nullptr;
   table_data = new ArrayType[size];
@@ -13,7 +13,7 @@ constexpr ArrayType *create_1d_array(const_szt &size) {
 
 //REVIEW: Allocate 2D Array
 template<typename ArrayType>
-constexpr ArrayType **create_2d_array(const_szt &rows, const_szt &columns) {
+ArrayType **create_2d_array(const_szt &rows, const_szt &columns) {
 
   ArrayType **table_data = nullptr;
   table_data = new ArrayType*[rows];

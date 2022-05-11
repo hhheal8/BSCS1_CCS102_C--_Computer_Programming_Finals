@@ -3,7 +3,7 @@
 #include "validate_user_var.hpp"
 
 template<>
-auto encode_data(double **table_data, const_szt &rows, const_szt &columns) -> void {
+auto encode_data(std::string *str_table_data, double **table_data, const_szt &rows, const_szt &columns) -> void {
 
   //REVIEW: Local Variable Declarations
 
@@ -29,7 +29,7 @@ auto encode_data(double **table_data, const_szt &rows, const_szt &columns) -> vo
 
     for(size_t k = 1; k < columns + 1; ++k) {
 
-      std::cout << "Enter Grade on Subject No. " << k << ".   : ";
+      std::cout << "\nEncode " << str_table_data[k - 1] << " Subject Grade\nEnter Grade on Subject No. " << k << ".   : ";
       validate_grade_subj(grade_subj, k);
 
       table_data[i][k] = grade_subj;

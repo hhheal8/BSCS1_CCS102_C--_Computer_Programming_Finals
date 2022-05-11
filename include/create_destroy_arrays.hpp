@@ -3,13 +3,11 @@
 
 #include "types_aliases.hpp"
 
-//REVIEW: `constexpr` - so array will be known at compile time
+template<typename ArrayType>
+ArrayType *create_1d_array(const_szt &size);
 
 template<typename ArrayType>
-constexpr ArrayType *create_1d_array(const_szt &size);
-
-template<typename ArrayType>
-constexpr ArrayType **create_2d_array(const_szt &rows, const_szt &columns);
+ArrayType **create_2d_array(const_szt &rows, const_szt &columns);
 
 template<typename ArrayType> 
 auto destroy_1d_array(ArrayType *table_data, const_szt &size) -> void;

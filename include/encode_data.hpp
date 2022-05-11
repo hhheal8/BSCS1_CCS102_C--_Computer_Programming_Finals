@@ -3,13 +3,13 @@
 
 #include "types_aliases.hpp"
 
-template<typename ArrayType>
-auto encode_data(ArrayType **table_data, const_szt &rows, const_szt &columns) -> void;
+template<typename ArrayType1, typename ArrayType2>
+auto encode_data(ArrayType1 *str_table_data, ArrayType2 **table_data, const_szt &rows, const_szt &columns) -> void;
 
 //ANCHOR: Template specialization
 //NOTE: Specialization for double
 
 template<>
-auto encode_data(double **table_data, const_szt &rows, const_szt &columns) -> void;
+auto encode_data(std::string *str_table_data, double **table_data, const_szt &rows, const_szt &columns) -> void;
 
 #endif // ENCODE_DATA_H
