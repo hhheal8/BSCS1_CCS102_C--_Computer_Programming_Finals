@@ -60,7 +60,6 @@ auto main() -> int {
   //Deallocate 2D double array
 
   double **list_data     = create_2d_array<double>(rows, columns);
-  double *number_code    = create_1d_array<double>(rows);
 
   encode_data(list_subj, list_data, rows, columns);
   create_html_table(file_html, list_subj, list_data, rows, columns);
