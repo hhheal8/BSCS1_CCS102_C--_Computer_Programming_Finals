@@ -13,7 +13,7 @@ auto encode_data(std::string *str_table_data, double **table_data, const_szt &ro
 
   double *temp_number_code = create_1d_array<double>(rows);
 
-  const_str warning_msg = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code: ";
+  const_str warning_msg = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code(Unique No.): ";
 
   //ANCHOR: Algorithm and Statements to execute
 
