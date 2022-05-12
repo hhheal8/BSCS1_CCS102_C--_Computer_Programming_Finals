@@ -68,8 +68,8 @@ auto validate_number_code(size_t &number_code) -> void {
   size_t student_number_code = 0;
   int count_number           = 0;
 
-  const_str error_msg1 = "\nInvalid Format/Not a valid Student Number Code\nRe-enter Student Number Code            : ";
-  const_str error_msg2 = "\nInvalid Format/Student Number Code must be 10 maximum digits only\nRe-enter Student Number Code           : ";
+  const_str error_msg1 = "\nInvalid Format/Not a valid Student Number Code\nRe-enter Student Number Code             : ";
+  const_str error_msg2 = "\nInvalid Format/Student Number Code must be 10 maximum digits only\nRe-enter Student Number Code            : ";
 
   //ANCHOR: Algorithm and Statements to execute
 
@@ -107,8 +107,8 @@ auto validate_grade_subj(double &grade_subj, const_szt &validate_at_n) -> void {
 
   //REVIEW: Local Variable Declarations
   
-  const_str warning_msg1 = "\nInvalid Format/Not an integer\nRe-enter Grade for Subject no. ";
-  const_str warning_msg2 = "\nInvalid Format/Grade(s) per Subject should be between 1 to 100 only\nRe-enter Grade for Subject no. ";
+  const_str warning_msg1 = "\nInvalid Format/Not an integer\nRe-enter Grade for Subject No. ";
+  const_str warning_msg2 = "\nInvalid Format/Grade(s) per Subject should be between 1 to 100 only\nRe-enter Grade for Subject No. ";
 
   //ANCHOR: Algorithm and Statements to execute
 

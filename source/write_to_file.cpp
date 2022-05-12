@@ -32,7 +32,6 @@ tr:nth-child(even) {
   html_tags->close_head  = "\n</head>";
 
   html_tags->start_body  = "\n<body>";
-
   html_tags->start_table = "\n<table>";
   html_tags->start_table_r = "\n\t<tr>";
   html_tags->start_table_h = "\n\t\t<th>";
@@ -41,9 +40,7 @@ tr:nth-child(even) {
   html_tags->close_table_r = "\n\t</tr>";
   html_tags->close_table_h = "</th>";
   html_tags->close_table_d = "</td>";
-
   html_tags->close_table = "\n</table>";
-  
   html_tags->close_body = "\n</body>";
 
   html_tags->close_html = "\n</html>";
@@ -62,7 +59,6 @@ tr:nth-child(even) {
 
   file_html << html_tags->start;
   file_html << html_tags->start_html;
-
   file_html << "\n";
 
   file_html << html_tags->start_head;
@@ -72,11 +68,9 @@ tr:nth-child(even) {
 
   file_html << html_tags->close_style;
   file_html << html_tags->close_head;
-
   file_html << "\n";
 
   file_html << html_tags->start_body;
-
   file_html << html_tags->start_table;
 
   //ANCHOR: HTML Table Header
@@ -157,9 +151,7 @@ tr:nth-child(even) {
   }
 
   file_html << html_tags->close_table;
-
   file_html << html_tags->close_body;
-
   file_html << "\n";
 
   file_html << html_tags->close_html;
