@@ -805,6 +805,7 @@ CMakeFiles/CxxFinals2022.dir/source/encode_data.cpp.obj: ../source/encode_data.c
   C:/mingw64/include/c++/11.2.0/sstream \
   C:/mingw64/include/c++/11.2.0/bits/sstream.tcc \
   C:/mingw64/include/c++/11.2.0/limits \
+  ../include/create_destroy_arrays.hpp \
   ../include/validate_user_var.hpp
 
 CMakeFiles/CxxFinals2022.dir/source/enter_file_name.cpp.obj: ../source/enter_file_name.cpp \

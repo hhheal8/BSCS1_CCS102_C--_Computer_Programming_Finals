@@ -44,8 +44,9 @@ auto main() -> int {
   file_html.open(user_file, std::ios::out); //REVIEW: Open in output mode
   
   //ANCHOR:
-  //3rd step - Ask the user to enter the number of students to encode as rows
-  //4th step - Ask the user to enter the number of subject grades to encode as columns
+  //3rd step - Ask the user to enter the number of students to encode as rows for 2D array
+  //4th step - Ask the user to enter the number of subject grades to encode as columns for 2D array
+  //5th step - Ask the user to enter the name of the subject as columns for 2D array
 
   const_szt rows    = as_rows();
   const_szt columns = as_columns();
@@ -55,8 +56,8 @@ auto main() -> int {
 
   //ANCHOR:
   //Allocate 2D double array
-  //5th step - Encode student number code and grades per n subject
-  //6th step - Create html tags in user file(.html) and output the encoded information
+  //6th step - Encode student number code and grades per n subject
+  //7th step - Create html tags in user file(.html) and output the encoded information
   //Deallocate 2D double array
 
   double **list_data     = create_2d_array<double>(rows, columns);
