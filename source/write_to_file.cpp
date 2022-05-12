@@ -83,7 +83,7 @@ tr:nth-child(even) {
   file_html << html_tags->start_table_r;  
 
   file_html << html_tags->start_table_h << "Student Number Code" << html_tags->close_table_h;
-  for(size_t i = 0; i < columns; i++) {
+  for(size_t i = 0; i < columns; ++i) {
     file_html << html_tags->start_table_h << str_table_data[i] << " Grade" << html_tags->close_table_h;
   }
   file_html << html_tags->start_table_h << "Average Grade" << html_tags->close_table_h;
@@ -92,23 +92,21 @@ tr:nth-child(even) {
   file_html << html_tags->close_table_r;
 
   //ANCHOR: HTML Table Data
-  for(size_t i = 0; i < rows; i++) {
+  for(size_t i = 0; i < rows; ++i) {
 
     file_html << html_tags->start_table_r;
 
-    for(size_t j = 0; j < columns; j++) {
+    for(size_t j = 0; j < columns; ++j) {
       file_html << html_tags->start_table_d << std::fixed << std::setprecision(0) << table_data[i][j] << html_tags->close_table_d;
-
       break;
     }
 
-    for(size_t k = 1; k < columns + 1; k++) {
+    for(size_t k = 1; k < columns + 1; ++k) {
       sum_grades += table_data[i][k];
-
       file_html << html_tags->start_table_d<< std::fixed << std::setprecision(2) << table_data[i][k] << html_tags->close_table_d;
     }
 
-    for(size_t l = 1; l < columns; l++) {
+    for(size_t l = 1; l < columns + 1; ++l) {
       average_grade = sum_grades / columns;
 
       if(average_grade <= 60) {
@@ -132,7 +130,7 @@ tr:nth-child(even) {
       break;
     }
 
-    for(size_t m = 1; m < columns; m++) {
+    for(size_t m = 1; m < columns + 1; ++m) {
       if(average_grade <= 60) {
         file_html << html_tags->start_table_d << user_average_msg1 << html_tags->close_table_d;
       }
