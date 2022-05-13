@@ -60,7 +60,7 @@ auto main() -> int {
   //7th step - Create html tags in user file(.html) and output the encoded information
   //Deallocate 2D double array
 
-  double **list_data     = create_2d_array<double>(rows, columns);
+  double **list_data = create_2d_array<double>(rows, columns);
 
   encode_data(list_subj, list_data, rows, columns);
   create_html_table(file_html, list_subj, list_data, rows, columns);

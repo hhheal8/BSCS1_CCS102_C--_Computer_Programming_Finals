@@ -66,7 +66,7 @@ auto validate_number_code(size_t &number_code) -> void {
   //REVIEW: Local Variable Declarations
 
   size_t student_number_code = 0;
-  int count_number           = 0;
+  size_t count_number        = 0;
 
   const_str error_msg1 = "\nInvalid Format/Not a valid Student Number Code\nRe-enter Student Number Code             : ";
   const_str error_msg2 = "\nInvalid Format/Student Number Code must be 10 maximum digits only\nRe-enter Student Number Code            : ";
