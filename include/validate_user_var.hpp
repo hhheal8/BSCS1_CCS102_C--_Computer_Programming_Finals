@@ -22,10 +22,10 @@ auto validate_user_var(size_t &var, const_str &msg) -> void;
 //NOTE: Template specialization for size_t
 
 template<typename Var>
-auto validate_number_code(Var &number_code, std::string *num_code_table, const_szt &rows) -> void;
+auto validate_number_code(Var &number_code) -> void;
 
 template<>
-auto validate_number_code(std::string &number_code, std::string *num_code_table, const_szt &rows) -> void;
+auto validate_number_code(std::string &number_code) -> void;
 
 //ANCHOR: Template specialization
 //NOTE: Template specialization for double

@@ -60,20 +60,20 @@ auto main() -> int {
   //7th step - Create html tags in user file(.html) and output the encoded information
   //Deallocate 1D string array, 2D double array
   
-  std::string *num_code_table = create_1d_array<std::string>(rows);
+  std::string *list_n_code = create_1d_array<std::string>(rows);
 
   double **list_data = create_2d_array<double>(rows, columns);
 
-  encode_data(num_code_table, list_subj, list_data, rows, columns);
+  encode_data(list_n_code, list_subj, list_data, rows, columns);
 
   create_html_table(
-    file_html, num_code_table, 
+    file_html, list_n_code, 
     list_subj, list_data, 
     rows, columns
   );
 
   destroy_1d_array<std::string>(list_subj, columns);
-  destroy_1d_array<std::string>(num_code_table, rows);
+  destroy_1d_array<std::string>(list_n_code, rows);
   destroy_2d_array<double>(list_data, rows);
 
   file_html.close();

@@ -1,6 +1,6 @@
 #include "write_to_file.hpp"
 
-auto create_html_table(std::fstream &file_html, std::string *num_code_table, std::string *str_table_data, 
+auto create_html_table(std::fstream &file_html, std::string *n_code_table_data, std::string *subj_table_data, 
                         double **table_data, const_szt &rows, const_szt &columns) -> void {
 
   //REVIEW: Local Variable Declarations
@@ -78,7 +78,7 @@ tr:nth-child(even) {
 
   file_html << html_tags->start_table_h << "Student Number Code" << html_tags->close_table_h;
   for(size_t i = 0; i < columns; ++i) {
-    file_html << html_tags->start_table_h << str_table_data[i] << " Grade" << html_tags->close_table_h;
+    file_html << html_tags->start_table_h << subj_table_data[i] << " Grade" << html_tags->close_table_h;
   }
   file_html << html_tags->start_table_h << "Average Grade" << html_tags->close_table_h;
   file_html << html_tags->start_table_h << "Result" << html_tags->close_table_h;
@@ -91,7 +91,7 @@ tr:nth-child(even) {
     file_html << html_tags->start_table_r;
 
     for(size_t j = 0; j < columns; ++j) {
-      file_html << html_tags->start_table_d << std::fixed << std::setprecision(0) << num_code_table[i] << html_tags->close_table_d;
+      file_html << html_tags->start_table_d << std::fixed << std::setprecision(0) << n_code_table_data[i] << html_tags->close_table_d;
       break;
     }
 

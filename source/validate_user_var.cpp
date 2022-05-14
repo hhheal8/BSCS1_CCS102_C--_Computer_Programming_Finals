@@ -61,16 +61,16 @@ auto validate_user_var(size_t &var, const_str &msg) -> void {
 }
 
 template<>
-auto validate_number_code(std::string &number_code, std::string *num_code_table, const_szt &rows) -> void {
+auto validate_number_code(std::string &number_code) -> void {
 
   //REVIEW: Local Variable Declarations
 
   const_str error_msg1 = "\nInvalid Format/Student Number Code Characters are too long\nRe-enter Student Number Code             : ";
-  const_str error_msg2 = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code(Unique No.): ";
+  // const_str error_msg2 = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code(Unique No.): ";
 
   //ANCHOR: Algorithm and Statements to execute
 
-  std::getline(std::cin, number_code);
+  std::getline(std::cin.ignore(), number_code);
 
   if(!std::cin) {
     std::cout << error_msg1;
@@ -78,7 +78,7 @@ auto validate_number_code(std::string &number_code, std::string *num_code_table,
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    validate_number_code(number_code, num_code_table, rows);
+    validate_number_code(number_code);
   }
 
 }
