@@ -55,18 +55,26 @@ auto main() -> int {
   enter_subject_name(list_subj, columns);
 
   //ANCHOR:
-  //Allocate 2D double array
+  //Allocate 1D string array, 2D double array
   //6th step - Encode student number code and grades per n subject
   //7th step - Create html tags in user file(.html) and output the encoded information
-  //Deallocate 2D double array
+  //Deallocate 1D string array, 2D double array
+  
+  std::string *num_code_table = create_1d_array<std::string>(rows);
 
   double **list_data = create_2d_array<double>(rows, columns);
 
-  encode_data(list_subj, list_data, rows, columns);
-  create_html_table(file_html, list_subj, list_data, rows, columns);
+  encode_data(num_code_table, list_subj, list_data, rows, columns);
 
-  destroy_2d_array<double>(list_data, rows);
+  create_html_table(
+    file_html, num_code_table, 
+    list_subj, list_data, 
+    rows, columns
+  );
+
   destroy_1d_array<std::string>(list_subj, columns);
+  destroy_1d_array<std::string>(num_code_table, rows);
+  destroy_2d_array<double>(list_data, rows);
 
   file_html.close();
 

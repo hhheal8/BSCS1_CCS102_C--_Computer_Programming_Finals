@@ -1,6 +1,6 @@
 #include "write_to_file.hpp"
 
-auto create_html_table(std::fstream &file_html, std::string *str_table_data, 
+auto create_html_table(std::fstream &file_html, std::string *num_code_table, std::string *str_table_data, 
                         double **table_data, const_szt &rows, const_szt &columns) -> void {
 
   //REVIEW: Local Variable Declarations
@@ -91,7 +91,7 @@ tr:nth-child(even) {
     file_html << html_tags->start_table_r;
 
     for(size_t j = 0; j < columns; ++j) {
-      file_html << html_tags->start_table_d << std::fixed << std::setprecision(0) << table_data[i][j] << html_tags->close_table_d;
+      file_html << html_tags->start_table_d << std::fixed << std::setprecision(0) << num_code_table[i] << html_tags->close_table_d;
       break;
     }
 

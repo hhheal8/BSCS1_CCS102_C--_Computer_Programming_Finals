@@ -61,26 +61,16 @@ auto validate_user_var(size_t &var, const_str &msg) -> void {
 }
 
 template<>
-auto validate_number_code(size_t &number_code) -> void {
+auto validate_number_code(std::string &number_code, std::string *num_code_table, const_szt &rows) -> void {
 
   //REVIEW: Local Variable Declarations
 
-  size_t student_number_code = 0;
-  size_t count_number        = 0;
-
-  const_str error_msg1 = "\nInvalid Format/Not a valid Student Number Code\nRe-enter Student Number Code             : ";
-  const_str error_msg2 = "\nInvalid Format/Student Number Code must be 10 maximum digits only\nRe-enter Student Number Code            : ";
+  const_str error_msg1 = "\nInvalid Format/Student Number Code Characters are too long\nRe-enter Student Number Code             : ";
+  const_str error_msg2 = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code(Unique No.): ";
 
   //ANCHOR: Algorithm and Statements to execute
 
-  std::cin >> number_code;
-
-  student_number_code = number_code;
-
-  while(student_number_code > 0) {
-    student_number_code /= 10;
-    count_number++;
-  }
+  std::getline(std::cin, number_code);
 
   if(!std::cin) {
     std::cout << error_msg1;
@@ -88,16 +78,7 @@ auto validate_number_code(size_t &number_code) -> void {
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    validate_number_code(number_code);
-  }
-
-  if(count_number != 10) {
-    std::cout << error_msg2;
-
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-    validate_number_code(number_code);
+    validate_number_code(number_code, num_code_table, rows);
   }
 
 }
