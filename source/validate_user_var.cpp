@@ -61,24 +61,23 @@ auto validate_user_var(size_t &var, const_str &msg) -> void {
 }
 
 template<>
-auto validate_number_code(std::string &number_code) -> void {
-
-  //REVIEW: Local Variable Declarations
-
-  const_str error_msg1 = "\nInvalid Format/Student Number Code Characters are too long\nRe-enter Student Number Code             : ";
-  // const_str error_msg2 = "\nInvalid Format/Student Number Code is already existing\nRe-enter Student Number Code(Unique No.): ";
+auto validate_number_code(std::string &number_code, std::string *n_code_table_data, const_szt &rows, const_szt &validate_at_n) -> void {
 
   //ANCHOR: Algorithm and Statements to execute
 
-  std::getline(std::cin.ignore(), number_code);
+  //TODO: This is a bug LOL
 
-  if(!std::cin) {
-    std::cout << error_msg1;
+  std::getline(std::cin, number_code);
 
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-    validate_number_code(number_code);
+  for(size_t i = 0; i < rows; ++i) {
+    if(n_code_table_data[i] == number_code) {
+      system("cls");
+      std::cout << "\nEncode Student Grades.\n";
+      std::cout << "\nStudent No. " << validate_at_n + 1 << '.';
+      std::cout << "\nPlease do not enter an existing Number Code(Must be a Unique No.): ";
+      validate_number_code(number_code, n_code_table_data, rows, validate_at_n);
+      return;
+    }
   }
 
 }

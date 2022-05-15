@@ -44,7 +44,7 @@ auto enter_subject_name(std::string *table_data, const_szt &columns) -> void {
   std::cin.ignore();
   for(size_t i = 0; i < columns; ++i) {
     std::cout << "Enter Name of Subject No. " << i + 1 << ".   : ";
-    getline(std::cin, subj_name);
+    std::getline(std::cin, subj_name);
 
     table_data[i] = subj_name;
   }

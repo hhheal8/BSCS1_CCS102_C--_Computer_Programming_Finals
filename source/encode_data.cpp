@@ -14,19 +14,19 @@ auto encode_data(std::string *n_code_table_data, std::string *subj_table_data, d
 
   //ANCHOR: Algorithm and Statements to execute
 
-  system("cls");
-  std::cout << "\nEncode Student Grades.\n";
-
   for(size_t i = 0; i < rows; ++i) {
 
+    system("cls");
+    std::cout << "\nEncode Student Grades.\n";
     for(size_t j = 0; j < columns + 1; ++j) {
 
-      std::cout << "\nStudent No. " << i + 1 << ". Enter Student Number Code: ";
-      validate_number_code(number_code);
+      std::cout << "\nStudent No. " << i + 1 << '.';
+      std::cout << "\nPlease do not enter an existing Number Code(Must be a Unique No.): ";
+      validate_number_code(number_code, n_code_table_data, rows, i);
 
       n_code_table_data[i] = number_code;
 
-      std::cout << "\nEncode " << number_code << "\'s Grades:\n";
+      std::cout << "\nEncode " << n_code_table_data[i] << "\'s Grades:\n";
       break;
 
     }
